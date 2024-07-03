@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovatHer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@1,400;1,500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Italianno&family=Playwrite+US+Trad:wght@100..400&family=Satisfy&family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- STYLESHEET -->
+    <style>
+        /* * Google-fonts  */
+*{
+  /* font-family: 'Poppins', sans-serif; */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+}
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #f9f9f9;
+        }
+        header {
+            background-image: url(christina-wocintechchat-com-FPQlXQtjkqU-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-color: rgb(0,0,0,0.7);
+            background-blend-mode: darken;  
+
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            position: fixed;
+            width: calc(100% - 1px);
+            justify-content: space-evenly;
+            background: #2a9d8f;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            /* position: fixed; */
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #264653;
+           background-color: #fff;
+        }
+        .title > p {
+            margin: 0;
+            line-height: 5rem;
+            width: auto;
+}
+.title {
+  font-size: 4rem;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+
+  font-weight: 700;
+  letter-spacing: -0.3rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* position: absolute; */
+  /* justify-content: center; */
+  /* align-self: center; */
+  /* height: 100%;  */
+  /* z-index: 1000; */
+ }
+.logo{
+justify-content: left;
+align-self: start;
+margin-left: -890px;
+font-family: "Bad Script", cursive;
+align-items: flex-start;
+font-weight: 600;
+font-size: 1.0rem;
+
+}
+.logo span{
+    color: hsl(155, 100%, 65%);
+
+}
+
+.title > p:nth-child(2){
+  color: hsl(155, 100%, 65%);
+  /* align-self: flex-end; */
+}
+
+
+
+
+
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: #fff;
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sora", sans-serif;
+    max-width: 991px;
+    min-width: 320px;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+.accordion h1 {
+    font-size: 32px;
+    text-align: center;
+}
+.accordion-item {
+    margin-top: 16px;
+    border: 1px solid #fcfcfc;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.accordion-item .accordion-item-title {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.accordion-item .accordion-item-desc {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #444;
+    border-top: 1px dashed #ddd;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+}
+.accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
+    display: block;
+}
+.accordion-item
+    input[type="checkbox"]:checked
+    ~ .accordion-item-title
+    .icon:after {
+    content: "-";
+    font-size: 20px;
+}
+.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
+    content: "+";
+    font-size: 20px;
+}
+.accordion-item:first-child {
+    margin-top: 0;
+}
+.accordion-item .icon {
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .accordion {
+        padding: 0 16px;
+    }
+    .accordion h1 {
+        font-size: 22px;
+    }
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            padding: 3rem 1rem;
+            background: #fff;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 1rem;
+            color: #2a9d8f;
+        }
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .cta {
+            background: #e76f51;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            margin-top: 1rem;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .cta:hover {
+            background: #d45d44;
+        }
+        footer {
+            background: #264653;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .icons a {
+           color: hsl(155, 100%, 65%);
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        .icons a:hover {
+            color: #e76f51;
+        }
+        .section-icon {
+            font-size: 3rem;
+            color: #2a9d8f;
+            margin-bottom: 1rem;
+        }
+        @media screen and (max-width: 1080px){
+        .logo{
+            justify-content: left;
+            align-self: start;
+            margin-left: -140px;      
+        } 
+    }     
+
+    </style>
+    <!-- END -->
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <sub style="font-size: 2.8rem;">I</sub>n<span>n</span>ov<span>a</span>te<span>Her</span>
+        <!-- <div class="hero" style="background-image: url('https://source.unsplash.com/PeUJyoylfe4/1920x600');"> -->
+            </div>
+            <!-- <h1>InnovateHer</h1> -->
+             <div class="title">
+            <p>Empowering</p>
+                <p> Girls </p>
+                    <p>with Technology Skills</p>
+                    </div>
+        <!-- </div> -->
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#mission">Mission</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#participate">Participate</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+    <div class="container">
+        <section id="about">
+            <i class="fas fa-info-circle section-icon"></i>
+            <h2>About Us</h2>
+            <p>InnovateHer is on a mission to empower girls from underserved communities by equipping them with essential tech skills. We envision a world where every girl has the confidence, knowledge, and creativity to lead in technology.</p>
+        </section>
+        <section id="vision">
+            <i class="fas fa-eye section-icon"></i>
+            <h2>Our Vision</h2>
+            <p>To create a future where every girl, regardless of her background, has the opportunity to explore, learn, and thrive in the field of technology. We strive to bridge the gender gap in tech and inspire the next generation of female leaders and innovators.</p>
+        </section>
+        <section id="mission">
+            <i class="fas fa-bullseye section-icon"></i>
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide accessible, high-quality tech education and mentorship to girls in underserved communities. Through workshops, coding camps, and continuous support, we aim to build a community of empowered young women ready to make a mark in the tech industry.</p>
+        </section>
+        <section id="volunteer">
+            <i class="fas fa-hands-helping section-icon"></i>
+            <h2>Volunteer</h2>
+            <p>Join our passionate team of volunteers and help make a lasting impact in the lives of young girls. We are looking for tech experts, mentors, educators, and administrative support to bring our vision to life.</p>
+            <a href="volunteer.html" class="cta">Become a Volunteer</a>
+        </section>
+        <section id="participate">
+            <i class="fas fa-user-graduate section-icon"></i>
+            <h2>Participate</h2>
+            <p>Are you a girl from an underserved community eager to learn tech skills? Enroll in our program and start your exciting journey in the world of technology today!</p>
+            <a href="participate.html" class="cta">Sign Up Now</a>
+        </section>
+        <section id="FAQ">
+
+        <div class="accordion">
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion1">
+                <label for="accordion1" class="accordion-item-title"><span class="icon"></span> Who can participate in the HerTechJourney programs?
+                </label>
+                <div class="accordion-item-desc">Our programs are designed for girls aged 10-18 from underserved communities who are eager to learn and explore the world of technology.
+
+                </div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion2">
+                <label for="accordion2" class="accordion-item-title"><span class="icon"></span> How can I enroll my child in a HerTechJourney program?
+                </label>
+                <div class="accordion-item-desc">You can enroll your child by visiting our website and filling out the participation form, or you can send an email to participate@hertechjourney.org with your child's details and your contact information.
+
+                </div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion3">
+                <label for="accordion3" class="accordion-item-title"><span class="icon"></span>Are the programs free of charge?
+                </label>
+                <div class="accordion-item-desc"> Yes, all our programs are free of charge for participants. We aim to make tech education accesible to girls. regardless of their financial backgrounds.
+                </div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion4">
+                <label for="accordion4" class="accordion-item-title"><span class="icon"></span> Can boys participate in HerTechJourney programs?
+
+                </label>
+                <div class="accordion-item-desc">While ur primary focus is empowering girls, we believe in inclusively and occassionally offer mixed-gender workshops. Check our website for details of upcoming events.</div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion5">
+                <label for="accordion5" class="accordion-item-title"><span class="icon"></span> How can I stay updated on HerTechJourney's activities and events?
+                </label>
+                <div class="accordion-item-desc">You can stay updated by subscribing to our newsletter, following us on social media, and regularly checking our website for news and announcements.
+
+                </div>
+            </div>
+        
+        </div>
+        </section>
+        <section id="contact">
+            <i class="fas fa-envelope section-icon"></i>
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! If you have any questions or need more information, please get in touch with us.</p>
+            <p>Email: <a href="mailto:info@hertechjourney.org">InnovateHer@gmail.com</a></p>
+            <p>Phone: +2348132742593</p>
+            <div class="icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 InnovateHer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
